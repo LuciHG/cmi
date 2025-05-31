@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://b4ue20eilxk8u"]
+
+[ext_resource type="Texture2D" uid="uid://buwuhyd8h7rya" path="res://assets/fondo2.jpg" id="1_xma4e"]
+[ext_resource type="Texture2D" uid="uid://dktplpgvfknrr" path="res://assets/creditos.png" id="2_0gs8u"]
+[ext_resource type="Texture2D" uid="uid://d3raumgvpud" path="res://assets/volverpequeñobien.png" id="3_bhusy"]
+[ext_resource type="Script" uid="uid://cvot24tqo0wls" path="res://SCRIPTS/botonvolver.gd" id="4_so7j4"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Fondo2" type="Sprite2D" parent="."]
+position = Vector2(574, 317)
+scale = Vector2(0.327419, 0.327419)
+texture = ExtResource("1_xma4e")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(651.918, 357)
+scale = Vector2(0.349194, 0.349194)
+texture = ExtResource("2_0gs8u")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = 921.0
+offset_top = 554.0
+offset_right = 1078.0
+offset_bottom = 608.0
+texture_normal = ExtResource("3_bhusy")
+script = ExtResource("4_so7j4")
+
+[connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_pressed"]

@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://77fxhho54jdx"]
+
+[ext_resource type="Script" uid="uid://dr5345dd1bmk1" path="res://SCRIPTS/buttonsound.gd" id="1_rriya"]
+[ext_resource type="AudioStream" uid="uid://dsuhv5uln80kw" path="res://assets/audio/projector-button-push-6258.mp3" id="2_yshi7"]
+
+[node name="Buttonsound" type="Node2D"]
+script = ExtResource("1_rriya")
+click_sound = ExtResource("2_yshi7")

@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://bkq5s1puesamu"]
+
+[ext_resource type="Texture2D" uid="uid://d3raumgvpud" path="res://assets/volverpequeñobien.png" id="3_re66e"]
+[ext_resource type="Script" uid="uid://cvot24tqo0wls" path="res://SCRIPTS/botonvolver.gd" id="4_tdcx2"]
+[ext_resource type="AudioStream" uid="uid://dsuhv5uln80kw" path="res://assets/audio/projector-button-push-6258.mp3" id="5_pyrin"]
+[ext_resource type="VideoStream" uid="uid://djuugr8qqelc1" path="res://assets/video/Mi-película-1.ogv" id="6_re66e"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+offset_left = 3.0
+offset_right = 1923.0
+offset_bottom = 1080.0
+scale = Vector2(0.599413, 0.599413)
+stream = ExtResource("6_re66e")
+autoplay = true
+loop = true
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = 921.0
+offset_top = 554.0
+offset_right = 1078.0
+offset_bottom = 608.0
+texture_normal = ExtResource("3_re66e")
+script = ExtResource("4_tdcx2")
+
+[node name="clicksound2" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_pyrin")
+volume_db = 11.082
+
+[connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_pressed"]
