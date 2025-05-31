@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://coyucvyskyy5r"]
+
+[ext_resource type="Texture2D" uid="uid://fnrbp2jjax4l" path="res://assets/fondojuegojpg.jpg" id="1_h0j7c"]
+[ext_resource type="Script" uid="uid://cw410evj55hsv" path="res://SCRIPTS/pantalla_0.5.gd" id="1_hc3vd"]
+[ext_resource type="Texture2D" uid="uid://1i8jwcqscjyw" path="res://assets/IMG_0017 (1) copia.png" id="2_hc3vd"]
+[ext_resource type="Texture2D" uid="uid://wxqp25wop5k8" path="res://assets/botonsiguiente.png" id="3_xwwdb"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_hc3vd")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(577.792, 373.25)
+scale = Vector2(0.333069, 0.334756)
+texture = ExtResource("1_h0j7c")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(376, 457)
+scale = Vector2(0.328762, 0.328762)
+texture = ExtResource("2_hc3vd")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = 836.0
+offset_top = 363.0
+offset_right = 997.0
+offset_bottom = 528.0
+texture_hover = ExtResource("3_xwwdb")
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

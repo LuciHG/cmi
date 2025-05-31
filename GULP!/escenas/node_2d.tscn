@@ -1,0 +1,107 @@
+[gd_scene load_steps=18 format=3 uid="uid://d4c6khlv86i2d"]
+
+[ext_resource type="Script" uid="uid://805a0l42b87t" path="res://SCRIPTS/node_2d.gd" id="1_nr8wp"]
+[ext_resource type="Texture2D" uid="uid://fnrbp2jjax4l" path="res://assets/fondojuegojpg.jpg" id="1_wtcfe"]
+[ext_resource type="Texture2D" uid="uid://coef4d5a3lwnn" path="res://assets/animación buena/duende1.png" id="3_ta5nu"]
+[ext_resource type="Texture2D" uid="uid://bhijd2tpegxcm" path="res://assets/animación buena/Duende2verdad.png" id="4_flf07"]
+[ext_resource type="Texture2D" uid="uid://dy2k5dvm50ry2" path="res://assets/animación buena/duende3.png" id="5_k73cj"]
+[ext_resource type="Texture2D" uid="uid://dt8kmxguyn8w5" path="res://assets/animación buena/duende4.png" id="6_rjqkl"]
+[ext_resource type="Texture2D" uid="uid://3b0y0r4y5klm" path="res://assets/animación buena/duende5bien.png" id="7_fs4d3"]
+[ext_resource type="Texture2D" uid="uid://b1j1uv48sb7w2" path="res://assets/animación buena/duende6.png" id="8_7vxoj"]
+[ext_resource type="Texture2D" uid="uid://bpy6jjses4xm0" path="res://assets/animación buena/duende7.png" id="9_ei405"]
+[ext_resource type="Texture2D" uid="uid://dn4pfuc0gi1os" path="res://assets/animación buena/duende9.png" id="10_e8dv2"]
+[ext_resource type="Texture2D" uid="uid://cjaihxehcv4y2" path="res://assets/animación buena/duende10.png" id="11_2nhjh"]
+[ext_resource type="Texture2D" uid="uid://drawvbxeg33qn" path="res://assets/animación buena/duende11.png" id="12_bjha6"]
+[ext_resource type="Texture2D" uid="uid://myxpt0sdpgso" path="res://assets/animación buena/duende13.png" id="13_gt76g"]
+[ext_resource type="Texture2D" uid="uid://b4yfynuals0vb" path="res://assets/animación buena/duende12.png" id="14_1fr6y"]
+[ext_resource type="Texture2D" uid="uid://cm5vbt0a52ycl" path="res://assets/animación buena/duende14.png" id="15_2hxjc"]
+[ext_resource type="Script" uid="uid://bf3ckayrnqgqv" path="res://SCRIPTS/scripanim.gd" id="15_d2bti"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d2bti"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_ta5nu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_flf07")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_k73cj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_rjqkl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_fs4d3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_7vxoj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ei405")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_e8dv2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_2nhjh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_bjha6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_gt76g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_gt76g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_gt76g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_gt76g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_gt76g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_1fr6y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_1fr6y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_1fr6y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_1fr6y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_1fr6y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_2hxjc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_nr8wp")
+
+[node name="Fondojuegojpg" type="Sprite2D" parent="."]
+position = Vector2(593, 358)
+scale = Vector2(0.337805, 0.337805)
+texture = ExtResource("1_wtcfe")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(591, 360)
+scale = Vector2(0.336089, 0.336089)
+sprite_frames = SubResource("SpriteFrames_d2bti")
+frame = 6
+frame_progress = 0.469704
+script = ExtResource("15_d2bti")
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
