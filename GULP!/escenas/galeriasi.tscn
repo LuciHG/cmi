@@ -1,0 +1,49 @@
+[gd_scene load_steps=15 format=3 uid="uid://bil1ske8ftm8y"]
+
+[ext_resource type="Script" uid="uid://3oeh14erxv12" path="res://SCRIPTS/galeriasi.gd" id="1_n7dcl"]
+[ext_resource type="Texture2D" uid="uid://7lbw7dspql15" path="res://assets/HIST1.jpg" id="2_n7dcl"]
+[ext_resource type="Texture2D" uid="uid://f1sx84mospk7" path="res://assets/HIST2.jpg" id="3_vny3h"]
+[ext_resource type="Texture2D" uid="uid://cy2mdaqp4v86o" path="res://assets/HIST3.jpg" id="4_ehsw8"]
+[ext_resource type="Texture2D" uid="uid://cjsggy76s5ko" path="res://assets/HIST4.jpg" id="5_xsn7y"]
+[ext_resource type="Texture2D" uid="uid://cjek6sho7l3a2" path="res://assets/HIST5.jpg" id="6_5f0wl"]
+[ext_resource type="Texture2D" uid="uid://cyr1tpqf06p4" path="res://assets/HIST6.jpg" id="7_1n6u8"]
+[ext_resource type="Texture2D" uid="uid://ccgkw2c0u68ht" path="res://assets/HIST7.jpg" id="8_dcvjb"]
+[ext_resource type="Texture2D" uid="uid://cm0b7ju8nkpqf" path="res://assets/HIST8.jpg" id="9_4js5f"]
+[ext_resource type="Texture2D" uid="uid://c28aqskt4bmaa" path="res://assets/HIST9.jpg" id="10_rxvps"]
+[ext_resource type="Texture2D" uid="uid://br7evnxgd7i1x" path="res://assets/botonatras.png" id="11_n7dcl"]
+[ext_resource type="Texture2D" uid="uid://wxqp25wop5k8" path="res://assets/botonsiguiente.png" id="12_vny3h"]
+[ext_resource type="Texture2D" uid="uid://d3raumgvpud" path="res://assets/volverpequeñobien.png" id="13_vny3h"]
+[ext_resource type="Script" uid="uid://b31216w1plqwd" path="res://SCRIPTS/back.gd" id="14_ehsw8"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_n7dcl")
+imagenes = Array[Texture2D]([ExtResource("2_n7dcl"), ExtResource("3_vny3h"), ExtResource("4_ehsw8"), ExtResource("5_xsn7y"), ExtResource("6_5f0wl"), ExtResource("7_1n6u8"), ExtResource("8_dcvjb"), ExtResource("9_4js5f"), ExtResource("10_rxvps")])
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+
+[node name="atras" type="TextureButton" parent="."]
+offset_left = 71.0
+offset_top = 495.0
+offset_right = 212.0
+offset_bottom = 643.0
+texture_normal = ExtResource("11_n7dcl")
+
+[node name="siguiente" type="TextureButton" parent="."]
+offset_left = 918.0
+offset_top = 488.0
+offset_right = 1079.0
+offset_bottom = 653.0
+texture_normal = ExtResource("12_vny3h")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = 23.0
+offset_top = 19.0
+offset_right = 180.0
+offset_bottom = 73.0
+texture_normal = ExtResource("13_vny3h")
+script = ExtResource("14_ehsw8")
+
+[connection signal="pressed" from="atras" to="." method="_on_atras_pressed"]
+[connection signal="pressed" from="siguiente" to="." method="_on_siguiente_pressed"]
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

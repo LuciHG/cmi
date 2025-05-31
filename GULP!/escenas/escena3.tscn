@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://sv8x8hwdc2km"]
+
+[ext_resource type="Texture2D" uid="uid://fnrbp2jjax4l" path="res://assets/fondojuegojpg.jpg" id="1_irfgq"]
+[ext_resource type="Texture2D" uid="uid://cm5vbt0a52ycl" path="res://assets/animación buena/duende14.png" id="2_bw4xa"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Fondojuegojpg" type="Sprite2D" parent="."]
+position = Vector2(587.534, 358.25)
+scale = Vector2(0.338821, 0.338821)
+texture = ExtResource("1_irfgq")
+
+[node name="Duende14" type="Sprite2D" parent="."]
+position = Vector2(586.158, 362.5)
+scale = Vector2(0.334553, 0.334553)
+texture = ExtResource("2_bw4xa")

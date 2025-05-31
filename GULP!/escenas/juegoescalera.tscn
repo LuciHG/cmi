@@ -1,0 +1,141 @@
+[gd_scene load_steps=20 format=3 uid="uid://bdek2bewlpxe3"]
+
+[ext_resource type="Script" uid="uid://dnt5mv17bbu5e" path="res://SCRIPTS/juegoescalera.gd" id="1_gk4w1"]
+[ext_resource type="Texture2D" uid="uid://bcmmq1dpa7h4" path="res://assets/IMG_0018.jpeg" id="2_puf33"]
+[ext_resource type="Texture2D" uid="uid://n1cj52osxn1n" path="res://assets/IMG_0073.png" id="3_bxksb"]
+[ext_resource type="Texture2D" uid="uid://cfhv3wsp50k6m" path="res://assets/IMG_0075.png" id="4_ai5yk"]
+[ext_resource type="PackedScene" uid="uid://cyn66aj0wa7g0" path="res://escenas/dropable.tscn" id="5_pk2qs"]
+[ext_resource type="PackedScene" uid="uid://cbfdfwuw1s42x" path="res://escenas/movible.tscn" id="6_mjiia"]
+[ext_resource type="Texture2D" uid="uid://dk8axep1bxkad" path="res://assets/IMG_0053.png" id="7_5khk5"]
+[ext_resource type="Texture2D" uid="uid://bgku0fij8dc8o" path="res://assets/IMG_0057.png" id="8_17cxw"]
+[ext_resource type="Texture2D" uid="uid://bqxcvg6ts8tsv" path="res://assets/IMG_0055.png" id="9_kkwxq"]
+[ext_resource type="Texture2D" uid="uid://cvfw6ctyafsyb" path="res://assets/IMG_0051.png" id="10_a280k"]
+[ext_resource type="Texture2D" uid="uid://b5yoedfpsu4fj" path="res://assets/IMG_0056.png" id="11_gfxv0"]
+[ext_resource type="Texture2D" uid="uid://bg0fl0l8nd0af" path="res://assets/IMG_0058.png" id="12_lxk6e"]
+[ext_resource type="Texture2D" uid="uid://bt84rwci14ktk" path="res://assets/IMG_0054.png" id="13_iyy4t"]
+[ext_resource type="Texture2D" uid="uid://c31nqis5bew5j" path="res://assets/IMG_0052.png" id="14_7vcpb"]
+[ext_resource type="PackedScene" uid="uid://lr2tlsiydi6t" path="res://escenas/moviblelargo.tscn" id="15_kjtpx"]
+[ext_resource type="PackedScene" uid="uid://djp43n5upfgu0" path="res://escenas/dropablelargo.tscn" id="16_6hqfl"]
+[ext_resource type="Texture2D" uid="uid://dibymdqr0w7vp" path="res://assets/IMG_0072 (1) copia.png" id="17_0f7ga"]
+[ext_resource type="Texture2D" uid="uid://blbrai2b8g1ob" path="res://assets/IMG_0076.png" id="18_rf0md"]
+[ext_resource type="AudioStream" uid="uid://cocqomauds0rn" path="res://assets/audio/metal-beaten-sfx-230501.wav" id="19_puf33"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_gk4w1")
+
+[node name="background" type="Sprite2D" parent="."]
+position = Vector2(605, 323)
+scale = Vector2(0.347143, 0.347143)
+texture = ExtResource("2_puf33")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(585, 336)
+scale = Vector2(0.331, 0.331)
+texture = ExtResource("3_bxksb")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(585, 336)
+scale = Vector2(0.331, 0.331)
+texture = ExtResource("4_ai5yk")
+
+[node name="dropable" parent="." instance=ExtResource("5_pk2qs")]
+position = Vector2(712, 152)
+
+[node name="movible" parent="." instance=ExtResource("6_mjiia")]
+position = Vector2(472, 162)
+textura = ExtResource("7_5khk5")
+
+[node name="movible2" parent="." instance=ExtResource("6_mjiia")]
+position = Vector2(392, 320)
+textura = ExtResource("8_17cxw")
+pieza_id = 1
+
+[node name="dropable2" parent="." instance=ExtResource("5_pk2qs")]
+position = Vector2(712, 208)
+hueco_id = 1
+
+[node name="movible3" parent="." instance=ExtResource("6_mjiia")]
+position = Vector2(496, 214)
+textura = ExtResource("9_kkwxq")
+pieza_id = 2
+
+[node name="dropable3" parent="." instance=ExtResource("5_pk2qs")]
+position = Vector2(712, 264)
+hueco_id = 2
+
+[node name="movible4" parent="." instance=ExtResource("6_mjiia")]
+position = Vector2(376, 152)
+textura = ExtResource("10_a280k")
+pieza_id = 3
+
+[node name="dropable4" parent="." instance=ExtResource("5_pk2qs")]
+position = Vector2(712, 312)
+hueco_id = 3
+
+[node name="movible5" parent="." instance=ExtResource("6_mjiia")]
+position = Vector2(416, 280)
+textura = ExtResource("11_gfxv0")
+pieza_id = 4
+
+[node name="dropable5" parent="." instance=ExtResource("5_pk2qs")]
+position = Vector2(712, 368)
+hueco_id = 4
+
+[node name="movible6" parent="." instance=ExtResource("6_mjiia")]
+position = Vector2(496, 246)
+textura = ExtResource("12_lxk6e")
+pieza_id = 5
+
+[node name="dropable6" parent="." instance=ExtResource("5_pk2qs")]
+position = Vector2(712, 424)
+hueco_id = 5
+
+[node name="movible7" parent="." instance=ExtResource("6_mjiia")]
+position = Vector2(384, 224)
+textura = ExtResource("13_iyy4t")
+pieza_id = 6
+
+[node name="dropable7" parent="." instance=ExtResource("5_pk2qs")]
+position = Vector2(712, 479)
+hueco_id = 6
+
+[node name="movible8" parent="." instance=ExtResource("6_mjiia")]
+position = Vector2(400, 192)
+textura = ExtResource("14_7vcpb")
+pieza_id = 7
+
+[node name="dropable8" parent="." instance=ExtResource("5_pk2qs")]
+position = Vector2(712, 534)
+hueco_id = 7
+
+[node name="movible9" parent="." instance=ExtResource("15_kjtpx")]
+position = Vector2(264, 336)
+pieza_id = 8
+
+[node name="dropable9" parent="." instance=ExtResource("16_6hqfl")]
+position = Vector2(632, 344)
+hueco_id = 8
+
+[node name="movible10" parent="." instance=ExtResource("15_kjtpx")]
+position = Vector2(312, 336)
+textura = ExtResource("17_0f7ga")
+pieza_id = 9
+
+[node name="dropable10" parent="." instance=ExtResource("16_6hqfl")]
+position = Vector2(792, 344)
+hueco_id = 9
+
+[node name="BotonContinuar" type="TextureButton" parent="."]
+visible = false
+offset_left = 288.0
+offset_top = 152.0
+offset_right = 1134.0
+offset_bottom = 698.0
+scale = Vector2(0.3, 0.3)
+texture_normal = ExtResource("18_rf0md")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("19_puf33")
+volume_db = -6.934
+
+[connection signal="pressed" from="BotonContinuar" to="." method="_on_boton_continuar_pressed"]

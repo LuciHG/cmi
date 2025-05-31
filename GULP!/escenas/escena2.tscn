@@ -1,0 +1,179 @@
+[gd_scene load_steps=25 format=3 uid="uid://c5tfm0ejavnws"]
+
+[ext_resource type="Script" uid="uid://805a0l42b87t" path="res://SCRIPTS/node_2d.gd" id="1_msute"]
+[ext_resource type="Texture2D" uid="uid://fnrbp2jjax4l" path="res://assets/fondojuegojpg.jpg" id="2_h0e88"]
+[ext_resource type="Texture2D" uid="uid://coef4d5a3lwnn" path="res://assets/animación buena/duende1.png" id="3_6tp23"]
+[ext_resource type="Texture2D" uid="uid://bhijd2tpegxcm" path="res://assets/animación buena/Duende2verdad.png" id="4_pjq4h"]
+[ext_resource type="Texture2D" uid="uid://dy2k5dvm50ry2" path="res://assets/animación buena/duende3.png" id="5_wes6x"]
+[ext_resource type="Texture2D" uid="uid://dt8kmxguyn8w5" path="res://assets/animación buena/duende4.png" id="6_qfa4d"]
+[ext_resource type="Texture2D" uid="uid://3b0y0r4y5klm" path="res://assets/animación buena/duende5bien.png" id="7_ulpwm"]
+[ext_resource type="Texture2D" uid="uid://b1j1uv48sb7w2" path="res://assets/animación buena/duende6.png" id="8_b5jst"]
+[ext_resource type="Texture2D" uid="uid://bpy6jjses4xm0" path="res://assets/animación buena/duende7.png" id="9_hi2w2"]
+[ext_resource type="Texture2D" uid="uid://dn4pfuc0gi1os" path="res://assets/animación buena/duende9.png" id="10_18u5g"]
+[ext_resource type="Texture2D" uid="uid://cjaihxehcv4y2" path="res://assets/animación buena/duende10.png" id="11_4oa8j"]
+[ext_resource type="Texture2D" uid="uid://drawvbxeg33qn" path="res://assets/animación buena/duende11.png" id="12_wqvu7"]
+[ext_resource type="Texture2D" uid="uid://myxpt0sdpgso" path="res://assets/animación buena/duende13.png" id="13_vsc66"]
+[ext_resource type="Texture2D" uid="uid://b4yfynuals0vb" path="res://assets/animación buena/duende12.png" id="14_qkr0q"]
+[ext_resource type="Texture2D" uid="uid://cm5vbt0a52ycl" path="res://assets/animación buena/duende14.png" id="15_fb26r"]
+[ext_resource type="Script" uid="uid://bd5o3te66p256" path="res://SCRIPTS/GULP.gd" id="16_otpco"]
+[ext_resource type="Texture2D" uid="uid://qgrmpgil8mf5" path="res://assets/GULP!.png" id="17_ei6ha"]
+[ext_resource type="AudioStream" uid="uid://d2oeifmel65m4" path="res://assets/audio/cartoon-falling-doink-jam-fx-1-00-06_iCdsyTgh.mp3" id="18_h0e88"]
+[ext_resource type="Texture2D" uid="uid://cs3yau2b6bnes" path="res://assets/IMG_0193.png" id="19_6tp23"]
+[ext_resource type="AudioStream" uid="uid://dsuhv5uln80kw" path="res://assets/audio/projector-button-push-6258.mp3" id="20_pjq4h"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d2bti"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_6tp23")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_pjq4h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_wes6x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_qfa4d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ulpwm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_b5jst")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_hi2w2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_18u5g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_4oa8j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_wqvu7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_vsc66")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_vsc66")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_vsc66")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_vsc66")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_vsc66")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_qkr0q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_qkr0q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_qkr0q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_qkr0q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_qkr0q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_fb26r")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[sub_resource type="Animation" id="Animation_ensig"]
+resource_name = "GULP"
+length = 3.75
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D/AnimationPlayer/Sprite2D:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.0333333, 3.73333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="Animation" id="Animation_xda0y"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D/AnimationPlayer/Sprite2D:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_if7xp"]
+_data = {
+&"GULP": SubResource("Animation_ensig"),
+&"RESET": SubResource("Animation_xda0y")
+}
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_msute")
+
+[node name="Fondojuegojpg" type="Sprite2D" parent="."]
+position = Vector2(587, 358)
+scale = Vector2(0.337805, 0.337805)
+texture = ExtResource("2_h0e88")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(587, 360)
+scale = Vector2(0.336089, 0.336089)
+sprite_frames = SubResource("SpriteFrames_d2bti")
+frame = 4
+frame_progress = 0.753518
+
+[node name="Node2D" type="Node2D" parent="."]
+script = ExtResource("16_otpco")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Node2D"]
+root_node = NodePath("../..")
+libraries = {
+&"": SubResource("AnimationLibrary_if7xp")
+}
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/AnimationPlayer"]
+visible = false
+position = Vector2(567, 356)
+scale = Vector2(0.379032, 0.379032)
+texture = ExtResource("17_ei6ha")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("18_h0e88")
+autoplay = true
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = 972.0
+offset_top = -28.0
+offset_right = 4003.0
+offset_bottom = 2297.0
+scale = Vector2(0.0663507, 0.0663507)
+texture_normal = ExtResource("19_6tp23")
+
+[node name="clicksound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("20_pjq4h")
+volume_db = 13.639
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="animation_finished" from="Node2D/AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

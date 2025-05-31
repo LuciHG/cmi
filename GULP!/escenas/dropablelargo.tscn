@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://djp43n5upfgu0"]
+
+[ext_resource type="Script" uid="uid://eaqqi0xawaa5" path="res://SCRIPTS/dropable.gd" id="1_u5ts0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bikar"]
+size = Vector2(24, 432)
+
+[node name="dropable" type="StaticBody2D" groups=["dropable"]]
+script = ExtResource("1_u5ts0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_bikar")

@@ -1,0 +1,67 @@
+[gd_scene load_steps=10 format=3 uid="uid://dd2yq5q25l5k2"]
+
+[ext_resource type="Texture2D" uid="uid://fnrbp2jjax4l" path="res://assets/fondojuegojpg.jpg" id="1_6mkn0"]
+[ext_resource type="Script" uid="uid://b8qhq8eq5d6cr" path="res://SCRIPTS/fin.gd" id="1_ghj4f"]
+[ext_resource type="Texture2D" uid="uid://cm5vbt0a52ycl" path="res://assets/animación buena/duende14.png" id="2_lppic"]
+[ext_resource type="Texture2D" uid="uid://qgrmpgil8mf5" path="res://assets/GULP!.png" id="3_ihdoa"]
+[ext_resource type="Texture2D" uid="uid://der81esvvgaed" path="res://assets/creditospequeño.png" id="4_ghj4f"]
+[ext_resource type="Texture2D" uid="uid://cnjs0u5y21x83" path="res://assets/galeriapequeñobien.png" id="6_torf3"]
+[ext_resource type="AudioStream" uid="uid://dsuhv5uln80kw" path="res://assets/audio/projector-button-push-6258.mp3" id="8_ihdoa"]
+[ext_resource type="AudioStream" uid="uid://2jxgxwr25ewg" path="res://assets/audio/3711ee1ed2d86cace91cad20b9f68d66Samorost_3_Soundtrack_10_-_Dry_Wooden_and_Windy_Fl.wav" id="8_lppic"]
+[ext_resource type="Texture2D" uid="uid://ccj4lil7gn4tt" path="res://assets/botonjugar.png" id="9_ihdoa"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_ghj4f")
+
+[node name="Fondojuegojpg" type="Sprite2D" parent="."]
+position = Vector2(585, 364)
+scale = Vector2(0.337805, 0.337805)
+texture = ExtResource("1_6mkn0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(585.466, 363.75)
+scale = Vector2(0.339228, 0.339228)
+texture = ExtResource("2_lppic")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(585.466, 363.75)
+scale = Vector2(0.339228, 0.339228)
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(567, 356)
+scale = Vector2(0.379032, 0.379032)
+texture = ExtResource("3_ihdoa")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_lppic")
+autoplay = true
+
+[node name="clicksound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_ihdoa")
+volume_db = 13.639
+
+[node name="galeria" type="TextureButton" parent="."]
+offset_left = 774.0
+offset_top = 563.0
+offset_right = 932.0
+offset_bottom = 616.0
+texture_normal = ExtResource("6_torf3")
+
+[node name="creditos" type="TextureButton" parent="."]
+offset_left = 969.0
+offset_top = 530.0
+offset_right = 1127.0
+offset_bottom = 581.0
+texture_normal = ExtResource("4_ghj4f")
+
+[node name="jugar" type="TextureButton" parent="."]
+offset_left = 884.0
+offset_top = 144.0
+offset_right = 3915.0
+offset_bottom = 2469.0
+scale = Vector2(0.1, 0.1)
+texture_normal = ExtResource("9_ihdoa")
+
+[connection signal="pressed" from="galeria" to="." method="_on_galeria_pressed"]
+[connection signal="pressed" from="creditos" to="." method="_on_creditos_pressed"]
+[connection signal="pressed" from="jugar" to="." method="_on_jugar_pressed"]

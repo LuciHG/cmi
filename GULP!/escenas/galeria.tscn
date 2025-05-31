@@ -1,0 +1,75 @@
+[gd_scene load_steps=12 format=3 uid="uid://cs11vmumt1v7n"]
+
+[ext_resource type="Texture2D" uid="uid://buwuhyd8h7rya" path="res://assets/fondo2.jpg" id="1_xop35"]
+[ext_resource type="Texture2D" uid="uid://c1oggtt3i4mgk" path="res://assets/galería.png" id="2_1g7um"]
+[ext_resource type="Texture2D" uid="uid://fnrbp2jjax4l" path="res://assets/fondojuegojpg.jpg" id="3_buv4r"]
+[ext_resource type="Texture2D" uid="uid://bgsqafljji76m" path="res://assets/Sin título-bocarecorte.jpg" id="4_fgje6"]
+[ext_resource type="Texture2D" uid="uid://vi67d5ua4yyk" path="res://assets/manomonstruo.png" id="5_sr6b1"]
+[ext_resource type="Texture2D" uid="uid://mflf5e2iy5w4" path="res://assets/ANIMACIÓN/monstruo1bien.png" id="6_0ty7s"]
+[ext_resource type="Texture2D" uid="uid://cm5vbt0a52ycl" path="res://assets/animación buena/duende14.png" id="7_2k17n"]
+[ext_resource type="Texture2D" uid="uid://bpy6jjses4xm0" path="res://assets/animación buena/duende7.png" id="8_iokoy"]
+[ext_resource type="Texture2D" uid="uid://cbukd7qh2w7ad" path="res://assets/duendemano.png" id="9_loy4o"]
+[ext_resource type="Texture2D" uid="uid://bwa1ox7awv8ll" path="res://assets/ANIMACIÓN/monstruo2bien.png" id="10_atu5r"]
+[ext_resource type="Texture2D" uid="uid://qgrmpgil8mf5" path="res://assets/GULP!.png" id="11_44sc8"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Fondo2" type="Sprite2D" parent="."]
+position = Vector2(574, 317)
+scale = Vector2(0.327419, 0.327419)
+texture = ExtResource("1_xop35")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(619, 325)
+scale = Vector2(0.268044, 0.268044)
+texture = ExtResource("2_1g7um")
+
+[node name="Fondojuegojpg" type="Sprite2D" parent="."]
+position = Vector2(175.313, 240.125)
+scale = Vector2(0.0722561, 0.0722561)
+texture = ExtResource("3_buv4r")
+
+[node name="SinTítulo-bocarecorte" type="Sprite2D" parent="."]
+position = Vector2(171, 499)
+scale = Vector2(0.0754032, 0.0754032)
+texture = ExtResource("4_fgje6")
+
+[node name="Manomonstruo" type="Sprite2D" parent="."]
+position = Vector2(399, 486)
+scale = Vector2(0.0893145, 0.0893145)
+texture = ExtResource("5_sr6b1")
+
+[node name="Monstruo1Bien" type="Sprite2D" parent="."]
+position = Vector2(969, 450)
+scale = Vector2(0.105973, 0.105973)
+texture = ExtResource("6_0ty7s")
+
+[node name="Duende14" type="Sprite2D" parent="."]
+position = Vector2(823, 160)
+scale = Vector2(0.224492, 0.224492)
+texture = ExtResource("7_2k17n")
+
+[node name="Duende7" type="Sprite2D" parent="."]
+position = Vector2(978, 296)
+scale = Vector2(0.230081, 0.230081)
+texture = ExtResource("8_iokoy")
+
+[node name="Duendemano" type="Sprite2D" parent="."]
+position = Vector2(808, 172)
+scale = Vector2(0.219556, 0.219556)
+texture = ExtResource("9_loy4o")
+
+[node name="Fondo3" type="Sprite2D" parent="."]
+position = Vector2(454.919, 236.701)
+scale = Vector2(0.0687894, 0.0687893)
+texture = ExtResource("1_xop35")
+
+[node name="Monstruo2Bien" type="Sprite2D" parent="."]
+position = Vector2(646, 671)
+scale = Vector2(0.105973, 0.105973)
+texture = ExtResource("10_atu5r")
+
+[node name="Gulp!" type="Sprite2D" parent="."]
+position = Vector2(533, 493)
+scale = Vector2(0.190726, 0.190726)
+texture = ExtResource("11_44sc8")
