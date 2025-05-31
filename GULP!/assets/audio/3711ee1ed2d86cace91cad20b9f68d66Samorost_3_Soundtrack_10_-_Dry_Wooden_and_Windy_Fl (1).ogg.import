@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cg7aruhte3nne"
+path="res://.godot/imported/3711ee1ed2d86cace91cad20b9f68d66Samorost_3_Soundtrack_10_-_Dry_Wooden_and_Windy_Fl (1).ogg-c09181491d09df8c101fdb13f4c7becb.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/3711ee1ed2d86cace91cad20b9f68d66Samorost_3_Soundtrack_10_-_Dry_Wooden_and_Windy_Fl (1).ogg"
+dest_files=["res://.godot/imported/3711ee1ed2d86cace91cad20b9f68d66Samorost_3_Soundtrack_10_-_Dry_Wooden_and_Windy_Fl (1).ogg-c09181491d09df8c101fdb13f4c7becb.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
