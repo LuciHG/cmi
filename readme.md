@@ -8,46 +8,47 @@ Proyecto de Creación Multimedia Interactiva de la  Facultad de Bellas Artes de 
 
 
 
-**Titulo** : MI Proyecto(nombre)
+**Titulo** : GULP!
 
-**Web:**   (url github.io)
+**Web:**   https://lucyinthesky-224.itch.io/gulp-v2
 
-**Autor:**  (Nombre apellidos)
+**Autor:**  Lucía Hernández García
 
-**Resumen** : Este proyecto busca contar las hitorias de migrantes jóvenes, siendo ellos mismos los protagonistas. Esta será una compilación de relatos y crónicas de sus experiencias, exponiendo su lucha de identidad y sentido de pertenencia, herencia migratoria, entre otros temas que abrirán un debate del tema.
+**Resumen** : Tras ser abandonado por sus amigos en el bosque, nuestro protagonista, un pequeño duende, es tragado por un monstruo gigante hecho de rocas. Esté deberá encontrar pistas y resolver puzles, con la ayuda de otros personajes, para poder salir.
 
-**Estilo/género:**  Novela / juego / portfolio / documental... etc.
+**Estilo/género:**  Juego/aventura/pointyclick/puzzle
 
-**Logotipo** : (insertar imagen y breve justificación, si  tiene) 
 
-(insertar imágenes a resolucion de 100px alto)
+**Logotipo** : ![Diseño sin título (4)](https://github.com/user-attachments/assets/ab7da6bc-a3c3-4d9c-bd9a-ef869b91305b)
 
-**Resolución:** 800x600px responsivo/o tamaño fijo (indicar la que has aplicado, y si es reescalable)
 
-**Probado en:**   (indicar dónde has probado que funciona: ej. Google Chrome / MS Edge... /móviles android )
 
-**Tamaño proyecto:** 14MB 
+**Resolución:** 1152x648 px
 
-**Licencia** Este proyecto tiene una Licencia CC Reconocimiento Compartir igual (CC BY-SA)
+**Probado en:**   MS Edge
 
-**Fecha** : 14/05/2020
+**Tamaño proyecto:** 104MB 
 
-**Medios** (donde se tiene presencia relacionada):
+**Fecha** : 29/05/2020
+
+**Medios** 
 
 - Github:
-- Twitter
-- Instagram
+-Itch.io
 
 
-![girl](https://github.com/mgea/cmi20/blob/master/WalkingGirl_front01.png)
 
 # 2. Memoria del proyecto 
 
 ### 2.1 Storyboard: 
 
+![IMG_0195](https://github.com/user-attachments/assets/19282fc3-e731-46ab-88a8-a303902d2be0)
+![IMG_0196](https://github.com/user-attachments/assets/d12a1e78-f4df-4680-a068-5d5c222592df)
+![IMG_0197](https://github.com/user-attachments/assets/e3c44d7d-aa6a-480a-80a7-5d63f7856660)
 
 
-(narra brevemente lo que sucede en tu proyecto, puedes usar 3-4 imágenes de apoyo)
+
+
 
 
 
@@ -55,7 +56,8 @@ Proyecto de Creación Multimedia Interactiva de la  Facultad de Bellas Artes de 
 
 
 
-(imagen con las distintas pantallas de navegación, usa draw.io o cualquier programa de dibujo)
+![IMG_0198](https://github.com/user-attachments/assets/a817afe5-b5e4-4dae-a3cb-49be64e29d92)
+
 
 
 
@@ -71,22 +73,21 @@ Metodología de desarrollo de productos multimedia basado en una metodología de
 
 ### Etapa 1: Ideación de proyecto
 
-**Investigación de campo** (propuestas inspiradoras para el proyecto)
-
-- Portfolio [Leonardi Web page](http://www.rleonardi.com/interactive-resume/) para idear cómo organizar el material
-- 
+**Investigación de campo** 
+-Propuestas que me han inspirado:
+  - Los juegos de Amanita Design: Samorost 1,2 y 3 y Machinarium, en la estética y el juego en sí. Estética: mezcla de elementos físicos( dibujos, elementos escaneados) y dibujo digital. Juego: búsqueda de pistas( pointyclick) y resolución de puzles.
 
 
 
 **Motivación de la propuesta** 
 
-Este  proyecto es interesante porque ... 
+Este proyecto es interesante porque tiene una propuesta artística y estética bastante trabajada, con variedad de técnicas, y narra una historia que es simple aunque bastante original. Es corto pero muestra bien el carácter del juego y podría ampliarse mucho más en un futuro
 
 
 
 **Publico / audiencia**
 
-- Orientado a 
+- Orientado a todos los públicos.
 
 
 
@@ -96,23 +97,23 @@ Este  proyecto es interesante porque ...
 
 (qué soluciones has planteado y cómo se han resuelto: juego, galería de fotos, grabación de video, etc.)
 
-- Juego. 
-- Video 
-- Instrucciones y ayuda al usuario 
-- Menús y elementos de navegación (botones)
-- etc.
+- Juego: Pointyclick: He asignado a los objetos la función _on_object_clicked, para que ocurrieran cosas al pulsarlos (aparecen otros objetos, bocadillos, se pasa a otra escena) y los he organizado en jerarquía de tal manera que solo aparecieran o funcionaran si se cumplían unas ciertas condiciones (para que el jugador siguiera un orden determinado). Puzle: he eguido el tutorial de drag and drop, asignando además a cada pieza un lugar determinado en el que tuviera que estar.
+- Video: es un video de proceso en procreate que he usado para poner mi nombre en los créditos.
+- Instrucciones y ayuda al usuario: quería que el juego fuera bastante intuitivo así que no he puesto instrucciones, solo algunas frases como en el puzle.
+- Menús y elementos de navegación (botones): al igual que todos los demás elementos, he dibujado todos los botones. Los botones para pasar de una pantalla a otra funcionan con hover. La galería muestra unos dibujos hechos a mano sobre lo que sucede antes de que el protagonista sea tragado por el monstruo.
+
 
 
 
 ### Etapa 3: Problemas identificados
 
-(que consideras que no  funciona correctamente y por qué )
+Considero que  el teaser, el menú y el juego funcionan correctamente, aunque algunos detalles podrían haber quedado más pulidos. El mayor problema que sigue estando es un error en la exportación, ya que al verlo en godot se ve correctamente, pero en itch.io se ve con unos márgenes que dejan ver objetos que deberían estar fuera de plano.
 
 
 
 # 4. Conclusiones 
 
-(explica brevemente tu valoración, problemas que has detectado y que te gustaría hacer o mejorar en el futuro )
+Lo cierto es que he tenido muchas dificultades en el ámbito de la programación ya que no tenía ningún tipo de experiencia previa a esta asignatura. Por lo tanto esa parte es bastante simple, pero estoy bastante orgullosa de lo que he conseguido hacer, además de toda la parte de la historia y el dibujo, de personajes, fondos, objetos,botones.. porque lo he hecho todo yo y ha sido bastante trabajo, pero creo que ha quedado bien,por lo que estoy muy orgullosa de toda esa parte.
 
 
 
@@ -122,25 +123,23 @@ Este  proyecto es interesante porque ...
 
 # 5 Referencias 
 
-**Artículos y blogs ** 
+-draganddrop: tutorial github https://github.com/mgea/godot/tree/main/drag_and_drop
 
-- Crofts, S., Fox, M., Retsema, A. and Williams, B. (2005) *Podcasting: A new technology in search of viable business models*First Monday, 10(9). https://doi.org/10.5210/fm.v10i9.1273. Recuperado el 8 de abril de 2020 de: https://journals.uic.edu/ojs/index.php/fm/article/view/1273/1193
+
 
 **Recursos y materiales audiovisuales:**
 
-* Musica:  
-* Imágenes:  
-* Tipografía
+* Musica:  https://youtu.be/pD9vHvNs-dg?si=jpN6YLT56Er5w9-A
+* Imágenes:  Todas dibujadas pr mí. Fondos realizados a mano con acuarelas, objetos, personajes, botones y letras realizados con procreate y photoshop.
+
 
 **Herramientas utilizadas**
 
-- Hippani Animator 5.1
-- 
+- Godot 4.4.1
+- Procreate
+- Photoshop
 
 
 
-(imagen de la licencia, copiar y pegar aquí la correcta)
 
-https://creativecommons.org/licenses/?lang=es
 
-Mayo 2023
