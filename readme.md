@@ -10,7 +10,7 @@ Proyecto de Creación Multimedia Interactiva de la  Facultad de Bellas Artes de 
 
 **Titulo** : GULP!
 
-**Web:**   https://lucyinthesky-224.itch.io/gulp-v2
+**Web:**   https://lucyinthesky-224.itch.io/gulp-v2 adjunto también un vídeo del juego https://drive.google.com/file/d/1-tcGCt2AyLBZ28M5qXbSJs7-sDF_yEoq/view?usp=sharing
 
 **Autor:**  Lucía Hernández García
 
