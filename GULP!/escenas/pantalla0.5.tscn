@@ -1,9 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://coyucvyskyy5r"]
+[gd_scene load_steps=8 format=3 uid="uid://coyucvyskyy5r"]
 
 [ext_resource type="Texture2D" uid="uid://fnrbp2jjax4l" path="res://assets/fondojuegojpg.jpg" id="1_h0j7c"]
 [ext_resource type="Script" uid="uid://cw410evj55hsv" path="res://SCRIPTS/pantalla_0.5.gd" id="1_hc3vd"]
 [ext_resource type="Texture2D" uid="uid://1i8jwcqscjyw" path="res://assets/IMG_0017 (1) copia.png" id="2_hc3vd"]
 [ext_resource type="Texture2D" uid="uid://wxqp25wop5k8" path="res://assets/botonsiguiente.png" id="3_xwwdb"]
+[ext_resource type="Texture2D" uid="uid://c4dd7kfuj87sn" path="res://assets/ANIMACIÓN/IMG_0416.png" id="5_awr22"]
+[ext_resource type="Texture2D" uid="uid://dojt87c6j4xtr" path="res://assets/ANIMACIÓN/IMG_0417.png" id="6_jvidx"]
+[ext_resource type="AudioStream" uid="uid://dsuhv5uln80kw" path="res://assets/audio/projector-button-push-6258.mp3" id="7_jvidx"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_hc3vd")
@@ -25,4 +28,25 @@ offset_right = 997.0
 offset_bottom = 528.0
 texture_hover = ExtResource("3_xwwdb")
 
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(618, 261)
+scale = Vector2(0.288006, 0.288006)
+texture = ExtResource("5_awr22")
+
+[node name="TextureButton2" type="TextureButton" parent="."]
+offset_left = 776.0
+offset_top = 339.0
+offset_right = 1464.0
+offset_bottom = 638.0
+scale = Vector2(0.3, 0.3)
+texture_normal = ExtResource("6_jvidx")
+
+[node name="clicksound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_jvidx")
+volume_db = 13.639
+
+[node name="Timer" type="Timer" parent="."]
+
 [connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="TextureButton2" to="." method="_on_texture_button_2_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -4,7 +4,6 @@
 [ext_resource type="AudioStream" uid="uid://dsuhv5uln80kw" path="res://assets/audio/projector-button-push-6258.mp3" id="2_is1c6"]
 
 [node name="Node2D" instance=ExtResource("1_dh74k")]
-scale = Vector2(2, 2)
 
 [node name="clicksound" type="AudioStreamPlayer2D" parent="." index="4"]
 stream = ExtResource("2_is1c6")
