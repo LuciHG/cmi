@@ -1,0 +1,9 @@
+# Treat all text files as UTF-8 and normalize line endings
+* text=auto
+
+# Handle Godot scene and resource files as text
+*.tscn text
+*.tres text
+*.gd text
+*.shader text
+*.glsl text
