@@ -124,7 +124,10 @@ Lo cierto es que he tenido muchas dificultades en el ámbito de la programación
 # 5 Referencias 
 
 -draganddrop: tutorial github https://github.com/mgea/godot/tree/main/drag_and_drop
-
+-https://www.youtube.com/watch?v=uhgswVkYp0o
+-pointyclick: https://www.youtube.com/watch?v=0vFYRTqRSf4
+-https://www.youtube.com/watch?v=-_LiMyZGoXw
+-https://www.youtube.com/watch?v=lILnUD3xph8&list=WL&index=1&t=21s (sonido global)
 
 
 **Recursos y materiales audiovisuales:**
